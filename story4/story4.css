@@ -35,6 +35,15 @@ header a {
     transition: background-image 2s;
 }
 
+.story{
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 22px;
+    color: #fff;
+}
+
 .scrollText {
     margin: 50vh auto;
     max-width: 50rem;
