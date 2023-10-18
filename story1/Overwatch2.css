@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    background-color: #000;
 }
 
 header {
@@ -38,8 +39,9 @@ header a {
     margin: 50vh auto;
     max-width: 50rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.8);
-    color: #000;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 22px;
+    color: #fff;
 }
 
 #introduction {
