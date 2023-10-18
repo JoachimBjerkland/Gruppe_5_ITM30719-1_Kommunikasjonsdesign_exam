@@ -33,3 +33,19 @@ header a {
     overflow: hidden;
     transition: background-image 2s;
 }
+
+.scrollText {
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+#introduction {
+    background-image: url("https://plus.unsplash.com/premium_photo-1674374443275-20dae04975ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
