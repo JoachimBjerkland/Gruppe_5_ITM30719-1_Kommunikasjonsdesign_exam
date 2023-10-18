@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    background-color: #000;
 }
 
 header {
@@ -32,4 +33,25 @@ header a {
     min-height: 60vh;
     overflow: hidden;
     transition: background-image 2s;
+}
+
+.scrollText {
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 22px;
+    color: #fff;
+}
+
+#introduction {
+    background-image: url("");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.end{
+    color: #fff;
 }
