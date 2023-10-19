@@ -1,65 +1,85 @@
-html {
+/*
+Usikker på om vi trenger denne css, ettersom css er i html koden
+
+
+html, body {
     scroll-behavior: smooth;
     background-color: #000;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+#mapContainer {
+    width: 100%;
+    height: 50vh;
+    z-index: 1;
+    position: relative;
+}
+
+#scrollContainer {
+    width: 100%;
+    min-height: 50vh;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.scrollBox {
+    position: relative;
+    display: block;
+    margin: 1rem 0;
+    width: 90%;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.scrollBox h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.scrollBox p {
+    margin: 0;
+}
+
+.rema-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.leaflet-popup-content {
+    padding: 10px;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
-    margin: 0;
+    margin: 0.5rem 0;
 }
 
 header a {
     color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem;
-}
-
-.scrollContainer {
-    width: 100vw;
-    min-height: 50vh;
-    overflow: hidden;
-    transition: background-image 2s;
+    font-size: 1rem;
+    padding: 0.5rem;
 }
 
 .story, .scrollText {
-    margin: 0.5rem auto; 
-    max-width: 90%;
+    margin: 0.5rem 0;
+    width: 90%;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.8);
-    font-size: 18px;
-    color: #fff;
-}
-
-#introduction {
-    background-image: url("");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.end {
+    font-size: 16px;
     color: #fff;
 }
 
 @media screen and (max-width: 768px) {
     header {
-        height: 50vh;
+        height: 30vh;
     }
 
     h1 {
@@ -67,14 +87,15 @@ header a {
     }
 
     header a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .scrollContainer {
         min-height: 40vh;
     }
 
-    .story, .scrollText {
+    .story, ..scrollText {
         font-size: 16px;
     }
 }
+*/

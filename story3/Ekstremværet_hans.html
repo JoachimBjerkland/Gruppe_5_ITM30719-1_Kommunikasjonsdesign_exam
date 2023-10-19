@@ -3,57 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekstremværet Hans</title>
-    <link href="Ekstremværet_hans.css" rel="stylesheet" media="all">
+    <title>Ekstremværet hans</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        div, article, section {
+            box-sizing: border-box;
+        }
+        #mapContainer {
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+        }
+        #scrollContainer {
+            width: 100vw;
+            height: 100vh;
+            z-index: 5;
+            padding-bottom: 50vh;
+            display: block;
+        }
+        .scrollBox {
+            position: relative;
+            display: block;
+            margin: 50vh 0 50vh 2rem;
+            z-index: 10;
+            width: 50%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px #ccc;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Ekstremværet Hans</h1>
-            <a href="#introduction">Start the story</a>
-        </div>
-    </header>
-    <section class="scrollContainer" id="introduction">
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies eget turpis elementum egestas.</p></div>
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies eget turpis elementum egestas.</p></div>
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies eget turpis elementum egestas.</p></div>
-    </section>
-    <section class="story">
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Praesent ultricies eget turpis elementum egestas.
-            Maecenas a dapibus diam. Phasellus eu vulputate enim. Morbi pretium accumsan elit, vitae porttitor augue dapibus a.
-            Sed eget nisl vestibulum, faucibus neque quis, tempus libero. Sed ipsum ipsum, laoreet nec pharetra eu, fringilla egestas quam.
-            Integer turpis nisl, lobortis euismod mollis ac, euismod ut tellus. Nunc semper sem vel mauris commodo pretium in in leo.
-            Vivamus posuere ullamcorper velit, nec facilisis elit. Cras vel ullamcorper nisl. Nam sed massa dolor.
-            Phasellus consequat congue diam, non mattis urna accumsan vel.
-            Suspendisse in gravida eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        </p></div>
-    </section>
-    <section class="scrollContainer" id="introduction">
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies eget turpis elementum egestas.</p></div>
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies eget turpis elementum egestas.</p></div>
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies eget turpis elementum egestas.</p></div>
-    </section>
-    <section class="story">
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Praesent ultricies eget turpis elementum egestas.
-            Maecenas a dapibus diam. Phasellus eu vulputate enim. Morbi pretium accumsan elit, vitae porttitor augue dapibus a.
-            Sed eget nisl vestibulum, faucibus neque quis, tempus libero. Sed ipsum ipsum, laoreet nec pharetra eu, fringilla egestas quam.
-            Integer turpis nisl, lobortis euismod mollis ac, euismod ut tellus. Nunc semper sem vel mauris commodo pretium in in leo.
-            Vivamus posuere ullamcorper velit, nec facilisis elit. Cras vel ullamcorper nisl. Nam sed massa dolor.
-            Phasellus consequat congue diam, non mattis urna accumsan vel.
-            Suspendisse in gravida eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        </p></div>
-    </section>
-    <section class="story">
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Praesent ultricies eget turpis elementum egestas.
-            Maecenas a dapibus diam. Phasellus eu vulputate enim. Morbi pretium accumsan elit, vitae porttitor augue dapibus a.
-            Sed eget nisl vestibulum, faucibus neque quis, tempus libero. Sed ipsum ipsum, laoreet nec pharetra eu, fringilla egestas quam.
-        </p></div>
-    </section>
-    <footer class="end">
-        <p>Authors: Lorem ipsum, Lorem ipsum og Lorem ipsum</p>
-      </footer>
+    <div id="mapContainer"></div>
+    <div id="scrollContainer">
+        <article class="scrollBox" id="start"><h3>Ekstremværet hans</h3><p>Scoll ned for å kunne se hvor mye denne hendelsen skadet omerådet dette skjedde</p></article>
+        <article class="scrollBox" id="hansn"><h3>Nesbyen</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
+        <article class="scrollBox" id="hansv"><h3>Våler</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
+        <article class="scrollBox" id="hansl"><h3>Leirsund</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
+        <article class="scrollBox" id="hansva"><h3>Valdres</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
+        <article class="scrollBox" id="hansh"><h3>Hemsedal</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
+        <article class="scrollBox" id="end"><p>Her ser du hendelsene som har skjedd i de forskjellige områdene der ekstremværet Hans herjet da det traff Østlandet fra 7 August 2023. Dette ekstremværet har kostet kummunene over 700 millioner kroner</p></article>
+    </div>
+
+    <script>
+        const centerLat = 60.087;
+        const centerLong = 11.777;
+        let map = L.map('mapContainer', {
+            center: [centerLat, centerLong],
+            zoom: 6,
+            scrollWheelZoom: false
+        })
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        const places = [
+            {name: "Nesbyen", lat: 60.5478, long: 9.0582},
+            {name: "Våler", lat: 60.8141, long: 11.9765},
+            {name: "Leirsund", lat: 59.9969, long: 11.0874},
+            {name: "Valdres", lat: 59.3093, long: 11.3084},
+            {name: "Hemsedal", lat: 60.9344, long: 8.5961}
+        ]
+
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                (rect.top <= 0 && rect.bottom >= 0) || 
+                (rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth))
+            );
+        }
+        places.map((place) => {
+            L.marker([place.lat, place.long]).addTo(map).bindPopup(place.name)
+        })
+        document.addEventListener('scroll', function () {
+            if(isInViewport(document.getElementById("start"))) {
+                map.flyTo([centerLat, centerLong], 6)
+            }
+            if(isInViewport(document.getElementById("hansn"))) {
+                map.flyTo([60.5478, 9.0582], 10)
+            }
+            if(isInViewport(document.getElementById("hansv"))) {
+                map.flyTo([60.8141, 11.9765], 10)
+            }
+            if(isInViewport(document.getElementById("hansl"))) {
+                map.flyTo([59.9969, 11.0874], 10)
+            }
+            if(isInViewport(document.getElementById("hansva"))) {
+                map.flyTo([59.3093, 11.3084], 10)
+            }
+            if(isInViewport(document.getElementById("hansh"))) {
+                map.flyTo([60.9344, 8.5961], 10)
+            }
+            if(isInViewport(document.getElementById("end"))) {
+                map.flyTo([centerLat, centerLong], 6)
+            }
+        }, {
+            passive: true
+        });
+    </script>
 </body>
 </html>
