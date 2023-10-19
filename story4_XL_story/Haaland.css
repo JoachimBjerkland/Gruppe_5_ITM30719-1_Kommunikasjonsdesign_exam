@@ -1,55 +1,47 @@
 html {
     scroll-behavior: smooth;
     background-color: #000;
+    font-size: 16px;
 }
 
 header {
     width: 100vw;
-    height: 140vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/15/FC_RB_Salzburg_versus_Wolfsberger_AC_%2810._August_2019%29_08.jpg");
     background-size: cover;
-    background-position: top left;
+    background-position: center;
+    text-align: center;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 1px 1px 1px #000;
+    margin: 0;
 }
 
 header a {
-    background: #000;
     color: #fff;
     font-size: 1.5rem;
-    text-align: center;
     padding: 1rem;
 }
 
 .scrollContainer {
     width: 100vw;
-    min-height: 60vh;
+    min-height: 50vh;
     overflow: hidden;
     transition: background-image 2s;
 }
 
-.story{
-    margin: 50vh auto;
-    max-width: 50rem;
+.story, .scrollText {
+    margin: 0.5rem auto; 
+    max-width: 90%;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.8);
-    font-size: 22px;
-    color: #fff;
-}
-
-.scrollText {
-    margin: 50vh auto;
-    max-width: 50rem;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.8);
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -61,6 +53,28 @@ header a {
     background-position: center center;
 }
 
-.end{
+.end {
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header a {
+        font-size: 1.2rem;
+    }
+
+    .scrollContainer {
+        min-height: 40vh;
+    }
+
+    .story, .scrollText {
+        font-size: 16px;
+    }
 }
