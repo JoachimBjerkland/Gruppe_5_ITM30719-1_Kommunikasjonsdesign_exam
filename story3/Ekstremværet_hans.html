@@ -23,7 +23,6 @@
             position: fixed;
             top: 0;
             left: 0;
-
         }
         #scrollContainer {
             width: 100vw;
@@ -50,13 +49,13 @@
 <body>
     <div id="mapContainer"></div>
     <div id="scrollContainer">
-        <article class="scrollBox" id="start"><h3>Ekstremværet hans</h3><p>Scoll ned for å kunne se hvor mye denne hendelsen skadet omerådet dette skjedde</p></article>
+        <article class="scrollBox" id="start"><h3>Ekstremværet hans</h3><p>Scroll ned for å kunne se hvor mye denne hendelsen skadet området dette skjedde</p></article>
         <article class="scrollBox" id="hansn"><h3>Nesbyen</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
         <article class="scrollBox" id="hansv"><h3>Våler</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
         <article class="scrollBox" id="hansl"><h3>Leirsund</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
         <article class="scrollBox" id="hansva"><h3>Valdres</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
         <article class="scrollBox" id="hansh"><h3>Hemsedal</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></article>
-        <article class="scrollBox" id="end"><p>Her ser du hendelsene som har skjedd i de forskjellige områdene der ekstremværet Hans herjet da det traff Østlandet fra 7 August 2023. Dette ekstremværet har kostet kummunene over 700 millioner kroner</p></article>
+        <article class="scrollBox" id="end"><p>Her ser du hendelsene som har skjedd i de forskjellige områdene der ekstremværet Hans herjet da det traff Østlandet fra 7 August 2023. Dette ekstremværet har kostet kommunene over 700 millioner kroner</p></article>
     </div>
 
     <script>
@@ -90,9 +89,25 @@
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth))
             );
         }
-        places.map((place) => {
-            L.marker([place.lat, place.long]).addTo(map).bindPopup(place.name)
-        })
+
+        const markers = places.map((place) => {
+            const marker = L.marker([place.lat, place.long]).addTo(map).bindPopup(place.name);
+            return marker.getLatLng();
+        });
+
+        const bounds = L.latLngBounds(markers);
+
+        const circleCenter = bounds.getCenter();
+
+        const circleRadius = circleCenter.distanceTo(bounds.getNorthEast());
+
+        const circle = L.circle(circleCenter, {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.2,
+            radius: circleRadius * 1.1,
+        }).addTo(map);
+
         document.addEventListener('scroll', function () {
             if(isInViewport(document.getElementById("start"))) {
                 map.flyTo([centerLat, centerLong], 6)
