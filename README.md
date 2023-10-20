@@ -10,6 +10,7 @@ Kilder:
 
 Story 3:
 Kilder:
+https://www.vg.no/spesial/2023/hans-kart/
 
 Story 4:
 Kilder:
