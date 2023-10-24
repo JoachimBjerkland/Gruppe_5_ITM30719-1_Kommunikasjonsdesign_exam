@@ -33,6 +33,8 @@ https://stackoverflow.com/questions/38705909/leaflet-circlemarker-not-applying-c
 https://snyk.io/advisor/npm-package/leaflet/functions/leaflet.circleMarker
 https://developers.google.com/maps/documentation/javascript/reference/coordinates
 https://gist.github.com/davidtheclark/5515733
+https://www.w3schools.com/html/html_images.asp
+https://unsplash.com/ (Her bildene er hentet fra)
 
 Story 4:
 Kilder:
