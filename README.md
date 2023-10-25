@@ -37,6 +37,14 @@ https://www.w3schools.com/html/html_images.asp
 https://unsplash.com/ (Her bildene er hentet fra)
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp (Gjøre siden brukbar på telefon også)
 https://www.w3schools.com/tags/tag_hn.asp (Font size)
+https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+https://www.w3schools.com/cssref/css3_pr_box-shadow.php
+https://www.w3schools.com/cssref/pr_padding-bottom.php
+https://www.w3schools.com/css/css_dimension.asp
+https://www.w3schools.com/cssref/pr_border.php
+https://www.w3schools.com/cssref/pr_class_position.php
+https://www.w3schools.com/css/css_display_visibility.asp
+
 
 Story 4:
 Kilder:
