@@ -35,6 +35,7 @@ https://developers.google.com/maps/documentation/javascript/reference/coordinate
 https://gist.github.com/davidtheclark/5515733
 https://www.w3schools.com/html/html_images.asp
 https://unsplash.com/ (Her bildene er hentet fra)
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp (Gjøre siden brukbar på telefon også)
 
 Story 4:
 Kilder:
