@@ -50,3 +50,4 @@ Story 4:
 Kilder:
 https://www.vg.no/spesial/haaland/
 https://snl.no/Erling_Braut_Haaland
+https://datawrapper.dwcdn.net/kcK9C/1/ (Selve tabellen med stats)
