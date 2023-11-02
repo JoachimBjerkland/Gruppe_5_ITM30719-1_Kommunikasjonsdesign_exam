@@ -10,21 +10,25 @@
      crossorigin=""/>
      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
-        main {
-            display: flex;
-            gap: 1rem;
-            width: 100%;
-            max-width: 900px;
-            margin: 10px auto;
-        }
-        #map { height: 600px; width: 800px; margin: 10px auto;}
+    main {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        max-width: 1200px; /* Adjust the max-width for your desired width */
+        margin: 10px auto;
+    }
+        #map { height: 800px; width: 100%; margin: 10px auto;}
+        
         article {
-            border: 1px solid #ccc;
-            background: #f3f3f3;
-            padding: .5rem;
-            margin-bottom: 5px;
-        }
-        h1 { text-align: center; }
+        border: 1px solid #000000;
+        background: #f3f3f3;
+        padding: .5rem;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
      </style>
 </head>
 <body>
@@ -88,7 +92,7 @@
         const centerLong = 15.194;
 
         const places = [
-            { name: "Map", lat: centerLat, long: centerLong, description: "Click here to see the map" },
+            { name: "Map", lat: centerLat, long: centerLong, description: "Klikk her for å se hele kartet" },
             { name: "Bryne", lat: 58.7354, long: 5.6477, description: "Fra sesong 2016 til 2017, spilte han for det norske laget bryne" },
             { name: "Molde", lat: 62.6028, long: 7.5893, description: "Fra sesong 2017 til 2019, spilte han for det norske laget Molde" },
             { name: "Red Bull Salzburg", lat: 47.8028, long: 13.0566, description: "Fra sesong 2019 til 2020, spilte han for det østerrikske laget Red Bull Salzburg" },
