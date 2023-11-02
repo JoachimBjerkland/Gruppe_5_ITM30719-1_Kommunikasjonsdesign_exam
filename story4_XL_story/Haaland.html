@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haaland og hans reise til toppen - XL story</title>
     <link href="Haaland.css" rel="stylesheet" media="all">
-    
-    <!-- Add Chart.js library for creating graphs -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Add Leaflet CSS and JavaScript -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        main {
+            display: flex;
+            gap: 1rem;
+            width: 100%;
+            max-width: 900px;
+            margin: 10px auto;
+        }
+        #map { height: 600px; width: 800px; margin: 10px auto;}
+        article {
+            border: 1px solid #ccc;
+            background: #f3f3f3;
+            padding: .5rem;
+            margin-bottom: 5px;
+        }
+        h1 { text-align: center; }
+     </style>
 </head>
 <body>
     <nav class="top-nav">
@@ -62,112 +77,69 @@
             Suspendisse in gravida eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
         </p></div>
     </section>
-    <section class="map-section">
-        <div class="map-container">
-            <!-- Add a div element for the map -->
-            <div id="mapContainer" style="width: 100vw; height: 100vh; z-index: 1; top: 0; left: 0;"></div>
-        </div>
-        <div id="scrollContainer" class="scrollText">
-            <article class="scrollBox" id="start">
-                <h3>Hvilken klubber har Haaland spilt i tidligere</h3>
-                <p>Her skal vi vise hvor Haaland har spilt før  han ankom Manchester City, hvilken klubber har han utviklet seg i til å bli den spilleren han er i dag?</p>
-            </article>
-            <article class="scrollBox" id="sted1">
-                <h3>Bryne</h3>
-                <p>Fra sesong 2016 til 2017, spilte han for det norske laget bryne, </p>
-            </article>
-            <article class="scrollBox" id="sted2">
-                <h3>Molde</h3>
-                <p>Fra sesong 2017 til 2019, spilte han for det norske laget Molde</p>
-            </article>
-            <article class="scrollBox" id="sted3">
-                <h3>Red Bull Salzburg</h3>
-                <p>Fra sesong 2019 til 2020, spilte han for det østerrikske laget Red Bull Salzburg</p>
-            </article>
-            <article class="scrollBox" id="sted4">
-                <h3>Borussia Dortmund</h3>
-                <p>Fra sesong 2020 til 2022, spilte han for det tyske laget Borussia Dortmund</p>
-            </article>
-            <article class="scrollBox" id="sted5">
-                <h3>Manchester City</h3>
-                <p>Fra sesong 2022, startet han å spille for det engelske Premier League laget Manchester City</p>
-            </article>
-            <article class="scrollBox" id="end">
-                <h3>Oppsummering</h3>
-                <p>Her har vi alle klubbene han har spilt i før han gjorde sin rekordsesong i den engelske premier league fotball klubben Manchester City</p>
-            </article>
-        </div>
-    </section>
+
+    <main>
+        <nav id="businesses"></nav>
+        <div id="map"></div>
+    </main>
     
     <script>
         const centerLat = 55.008;
-        const centerLong = 14.194;
-        let map = L.map('mapContainer', {
+        const centerLong = 15.194;
+
+        const places = [
+            { name: "Map", lat: centerLat, long: centerLong, description: "Click here to see the map" },
+            { name: "Bryne", lat: 58.7354, long: 5.6477, description: "Fra sesong 2016 til 2017, spilte han for det norske laget bryne" },
+            { name: "Molde", lat: 62.6028, long: 7.5893, description: "Fra sesong 2017 til 2019, spilte han for det norske laget Molde" },
+            { name: "Red Bull Salzburg", lat: 47.8028, long: 13.0566, description: "Fra sesong 2019 til 2020, spilte han for det østerrikske laget Red Bull Salzburg" },
+            { name: "Borussia Dortmund", lat: 51.5079, long: 7.4703, description: "Fra sesong 2020 til 2022, spilte han for det tyske laget Borussia Dortmund" },
+            { name: "Manchester City", lat: 53.4427, long: -2.2337, description: "Fra sesong 2022, startet han å spille for det engelske Premier League laget Manchester City" }
+        ]
+
+        let map = L.map('map', {
             center: [centerLat, centerLong],
-            zoom: 4,
-            scrollWheelZoom: false
+            zoom: 4
         })
+
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
-        const places = [
-            {name: "Bryne", lat: 58.7354, long: 5.6477},
-            {name: "Molde", lat: 62.6028, long: 7.5893},
-            {name: "Red Bull Salzburg", lat: 47.8028, long: 13.0566},
-            {name: "Borussia Dortmund", lat: 51.5079, long: 7.4703},
-            {name: "Manchester City", lat: 53.4427, long: -2.2337}
-        ]
-
-        function isInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                (rect.top <= 0 && rect.bottom >= 0) || 
-                (rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth))
-            );
-        }
-
-        const markers = places.map((place) => {
-            const marker = L.marker([place.lat, place.long]).addTo(map).bindPopup(place.name);
-            return marker.getLatLng();
+        places.forEach((place) => {
+            const marker = L.marker([place.lat, place.long]).addTo(map);
+            marker.bindPopup(`<b>${place.name}</b><br>${place.description}`);
         });
 
-        const bounds = L.latLngBounds(markers);
+        let navHTML = "";
 
-
-        document.addEventListener('scroll', function () {
-            if(isInViewport(document.getElementById("start"))) {
-                map.flyTo([centerLat, centerLong], 4)
-            }
-            if(isInViewport(document.getElementById("sted1"))) {
-                map.flyTo([60.5478, 9.0582], 10)
-            }
-            if(isInViewport(document.getElementById("sted2"))) {
-                map.flyTo([60.8141, 11.9765], 10)
-            }
-            if(isInViewport(document.getElementById("sted3"))) {
-                map.flyTo([59.9969, 11.0874], 10)
-            }
-            if(isInViewport(document.getElementById("sted4"))) {
-                map.flyTo([60.4708, 11.7142], 10)
-            }
-            if(isInViewport(document.getElementById("sted5"))) {
-                map.flyTo([60.9344, 8.5961], 10)
-            }
-            if(isInViewport(document.getElementById("end"))) {
-                map.flyTo([centerLat, centerLong], 4)
-            }
-        }, {
-            passive: true
+        places.forEach((place) => {
+            navHTML += `<article><h3>${place.name}</h3><p>${place.description}</p><button onclick="map.flyTo([${place.lat},${place.long}], 10)">Vis på kart</button></article>`;
         });
+
+        document.getElementById("businesses").innerHTML = navHTML;
     </script>
-    
-    <footer class="end">
-        <p>Authors: Joachim Halvorsen Bjerkland, Kasper Keiserud Mikalsen, Martin Samuelsen.</p>
-    </footer>
+        <section class="story">
+            <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent ultricies eget turpis elementum egestas.
+                Maecenas a dapibus diam. Phasellus eu vulputate enim. Morbi pretium accumsan elit, vitae porttitor augue dapibus a.
+                Sed eget nisl vestibulum, faucibus neque quis, tempus libero. Sed ipsum ipsum, laoreet nec pharetra eu, fringilla egestas quam.
+                Integer turpis nisl, lobortis euismod mollis ac, euismod ut tellus. Nunc semper sem vel mauris commodo pretium in in leo.
+                Vivamus posuere ullamcorper velit, nec facilisis elit. Cras vel ullamcorper nisl. Nam sed massa dolor.
+                Phasellus consequat congue diam, non mattis urna accumsan vel.
+                Suspendisse in gravida eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p></div>
+        </section>
+        <section class="story">
+            <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent ultricies eget turpis elementum egestas.
+                Maecenas a dapibus diam. Phasellus eu vulputate enim. Morbi pretium accumsan elit, vitae porttitor augue dapibus a.
+                Sed eget nisl vestibulum, faucibus neque quis, tempus libero. Sed ipsum ipsum, laoreet nec pharetra eu, fringilla egestas quam.
+                Integer turpis nisl, lobortis euismod mollis ac, euismod ut tellus. Nunc semper sem vel mauris commodo pretium in in leo.
+                Vivamus posuere ullamcorper velit, nec facilisis elit. Cras vel ullamcorper nisl. Nam sed massa dolor.
+                Phasellus consequat congue diam, non mattis urna accumsan vel.
+                Suspendisse in gravida eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p></div>
+        </section>
 </body>
 </html>
