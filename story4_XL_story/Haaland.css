@@ -74,6 +74,12 @@ header a {
     font-size: 1.3em;
 }
 
+#first{
+    font-size: 2rem;
+    color: #000000;
+    font-weight: bold;
+}
+
 
 #introduction {
     background-image: url("");
@@ -84,7 +90,7 @@ header a {
 }
 
 .end {
-    color: #fff;
+    color: #000000;
 }
 
 @media screen and (max-width: 768px) {
