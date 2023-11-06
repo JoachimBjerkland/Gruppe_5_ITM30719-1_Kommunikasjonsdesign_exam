@@ -121,39 +121,50 @@
     <script>
         const centerLat = 55.008;
         const centerLong = 15.194;
-
+    
         const places = [
             { name: "Map", lat: centerLat, long: centerLong, description: "Klikk her for å se hele kartet" },
             { name: "Bryne", lat: 58.7354, long: 5.6477, description: "Fra sesong 2016 til 2017, spilte han for det norske laget bryne" },
-            { name: "Molde", lat: 62.6028, long: 7.5893, description: "Fra sesong 2017 til 2019, spilte han for det norske laget Molde" },
+            { name: "Molde", lat: 62.7377, long: 7.1590, description: "Fra sesong 2017 til 2019, spilte han for det norske laget Molde" },
             { name: "Red Bull Salzburg", lat: 47.8028, long: 13.0566, description: "Fra sesong 2019 til 2020, spilte han for det østerrikske laget Red Bull Salzburg" },
             { name: "Borussia Dortmund", lat: 51.5079, long: 7.4703, description: "Fra sesong 2020 til 2022, spilte han for det tyske laget Borussia Dortmund" },
-            { name: "Manchester City", lat: 53.4427, long: -2.2337, description: "Fra sesong 2022, startet han å spille for det engelske Premier League laget Manchester City" }
+            { name: "Manchester City", lat: 53.4830, long: -2.1977, description: "Fra sesong 2022, startet han å spille for det engelske Premier League laget Manchester City, dette laget spiller han for fortsatt i 2023" }
         ]
-
+    
         let map = L.map('map', {
             center: [centerLat, centerLong],
             zoom: 4
         })
-
+    
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
-
-        places.forEach((place) => {
-            const marker = L.marker([place.lat, place.long]).addTo(map);
-            marker.bindPopup(`<b>${place.name}</b><br>${place.description}`);
-        });
-
+    
         let navHTML = "";
-
+    
         places.forEach((place) => {
-            navHTML += `<article><h3>${place.name}</h3><p>${place.description}</p><button onclick="map.flyTo([${place.lat},${place.long}], 10)">Vis på kart</button></article>`;
+            if (place.name !== "Map") {
+                const marker = L.marker([place.lat, place.long]).addTo(map);
+                marker.bindPopup(`<b>${place.name}</b><br>${place.description}`);
+            }
+    
+            navHTML += `<article><h3>${place.name}</h3><p>${place.description}</p>`;
+    
+            if (place.name === "Map") {
+                navHTML += `<button onclick="map.flyTo([${centerLat},${centerLong}], 4)">Zoom Out</button>`;
+            } else {
+                navHTML += `<button onclick="map.flyTo([${place.lat},${place.long}], 15)">Vis på kart</button>`;
+            }
+    
+            navHTML += `</article>`;
         });
-
+    
         document.getElementById("businesses").innerHTML = navHTML;
     </script>
+    
+    
+
         <section class="story">
             <div class="scrollText" id="first"><p>Sesong 2023/2024, hvordan har Haaland klart seg i sin andre sesong i Manchester City hittil?</p></div>
             <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies eget turpis elementum egestas.</p></div>
