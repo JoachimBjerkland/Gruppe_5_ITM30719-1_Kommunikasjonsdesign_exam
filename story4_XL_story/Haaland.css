@@ -1,8 +1,9 @@
 .top-nav {
     background-color: #2e0a0a;
-    color: #fff;
+    color: #000000;
     padding: 10px 80px;
     text-align: right;
+    width: 87.5vw;
 }
 
 .top-nav ul {
