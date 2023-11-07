@@ -7,6 +7,13 @@ Story 1:
 Kilder:
 https://www.gamer.no/artikler/overwatch-2-sjefen-om-review-bombing-ikke-en-morsom-opplevelse/516546
 
+https://www.ea.com/en-ca/news/fifa-points-belgium
+https://www.ea.com/games/fifa/news/five-years-of-fifa-ultimate-team?isLocalized=true
+https://www.nrk.no/nordland/fifa-ultimate-team-fra-ea-games-far-krass-kritikk-fra-spillavhengighet-norge-_-advarer-foreldre-1.15691322
+https://www.thegamer.com/ea-fifa-ultimate-team-revenue-gambling-complaints/
+https://www.thegamer.com/ea-made-over-1-5-billion-from-ultimate-team-during-the-past-financial-year/
+https://www.gamer.no/artikler/forbrukerradet-roper-varsko-et-klart-behov-for-a-regulere-lootbokser/514931
+
 Story 2:
 Kilder:
 
