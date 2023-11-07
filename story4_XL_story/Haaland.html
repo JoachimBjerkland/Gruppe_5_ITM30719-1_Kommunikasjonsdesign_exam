@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haaland og hans reise til toppen - XL story</title>
     <link href="Haaland.css" rel="stylesheet" media="all">
-    
-    <!-- Add Chart.js library for creating graphs -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Add Leaflet CSS and JavaScript -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+    main {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        max-width: 1200px; /* Adjust the max-width for your desired width */
+        margin: 10px auto;
+    }
+        #map { height: 800px; width: 100%; margin: 10px auto;}
+        
+        article {
+        border: 1px solid #000000;
+        background: #f3f3f3;
+        padding: .5rem;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+     </style>
 </head>
 <body>
     <nav class="top-nav">
@@ -23,153 +42,159 @@
     </nav>
     <header>
         <div>
-            <h1>Haaland og hans reise til toppen - informasjon/tekst, graf med info, Kart and tidslinje</h1>
-            <a>Har vi sett det siste av Erling Braut Haaland</a>
+            <h1>Haaland sin reise til toppen og hans rekord jakt</h1>
+            <a>Har vi sett det siste av Erling Braut Haaland?</a>
         </div>
     </header>
     <section class="scrollContainer">
         <div class="scrollText"><p>Erling Braut Haaland er en norsk fotballspiller som i dag spiller for det engelske Premier League-laget Manchester City</p></div>
         <div class="scrollText"><p>I en alder av 23 år har han allerede oppnådd mye gjennom karrieren sin i alle klubbene han har spilt for.</p></div>
-        <div class="scrollText"><p>Vi skal gå gjennom hvem denne store fotballspilleren er og hva han har oppnådd i sin karriere i den unge alderen han fortsatt er i.</p></div>
+        <div class="scrollText"><p>Vi skal gå gjennom hvem denne store fotballspilleren er, og hva han har oppnådd i sin karriere i den unge alderen han fortsatt er i.</p></div>
         <div class="scrollText"><p>Til slutt vil vi vise hvor han har spilt i løpet av sin karriere på et kart, der du kan se hvordan han har gjort det i løpet av karrieren sin.</p></div>
     </section>
     <section class="story">
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Praesent ultricies eget turpis elementum egestas.
-            Maecenas a dapibus diam. Phasellus eu vulputate enim. Morbi pretium accumsan elit, vitae porttitor augue dapibus a.
-            Sed eget nisl vestibulum, faucibus neque quis, tempus libero. Sed ipsum ipsum, laoreet nec pharetra eu, fringilla egestas quam.
-            Integer turpis nisl, lobortis euismod mollis ac, euismod ut tellus. Nunc semper sem vel mauris commodo pretium in in leo.
-            Vivamus posuere ullamcorper velit, nec facilisis elit. Cras vel ullamcorper nisl. Nam sed massa dolor.
-            Phasellus consequat congue diam, non mattis urna accumsan vel.
-            Suspendisse in gravida eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        </p></div>
+        <div class="scrollText" id="first"><p>Haaland har en rekke rekorder han enten har slått, tangert, misset eller som er pågående, dette er noen av disse rekordene:</p></div>
+        <div class="scrollText" id="first"><p>Slått:</p></div>
+        <div class="scrollText"><p>Flest mål på én sesong i Premier Leagues historie (22 lag). Han har i sin debut sesong scoret 36 mål, forrige rekorden var på 34 mål fra spillerne Andy Cole 1993/1994 og Alan Shearer i 1994/1995. Haaland fikk rekorden i sesongen 2022/2023</p></div>
+        <div class="scrollText"><p>Flest mål på én sesong i Premier Leagues historie (20 lag). Mohamed Salah hadde forrige rekord på 32 mål i sesongen 2017/2018. Haaland med 36 slo den rekorden i sin debut sesong.</p></div>
+        <div class="scrollText"><p>Raskest til å score 35 mål i Champions Leagues historie. 42 kamper forrige rekord, av Ruud van Nistelrooy. Haaland fikk rekorden på 27 kamper.</p></div>
+        <div class="scrollText"><p>Yngste til å score 35 mål i Champions Leagues historie Kylian Mbappé (PSG) 23 år og 260 dager. Haaland på 22 år 271 dager.</p></div>
+        <div class="scrollText"><p>Flest mål i første fem kamper i Premier League noensinne Micky Quinn (Coventry, 1992), Sergio Agüero (Manchester City, 2011/12) 8 mål. Haaland på 9 mål.</p></div>
+        <div class="scrollText"><p>Første til å score i fire første bortekamper i Premier Leagues historie</p></div>
+        <div class="scrollText"><p>Flest mål i en Premier League debutsesong Kevin Phillips (Sunderland, 1999/00) 30 mål Haaland med 36 mål.</p></div>
+        <div class="scrollText"><p>Flest mål på hjemmebane på én sesong i Premier Leagues historie Sergio Agüero (Manchester City, 2011/12) 16 mål. Haaland med 22 mål.</p></div>
+        <div class="scrollText"><p>Raskest til å nå 25 scoringer i Premier Leagues historie Kevin Phillips (Sunderland, 1999/00) 26 kamper. Haaland på 19 kamper.</p></div>
+        <div class="scrollText"><p>Raskest til å score fire hattricks i Premier Leagues historie Ruud van Nistelrooy (Manchester United, 2002/03) 65 kamper. Haaland på 19 kamper.</p></div>
+
+    </section>
+    <section class="story">
+        <div class="scrollText" id="first"><p>Tangert:</p></div>
+        <div class="scrollText"><p>Flest mål i en enkelt sluttspill-kamp i Champions League noensinne Lionel Messi (Barcelona, 2011/12) Haaland 5 mål</p></div>
+        <div class="scrollText"><p>Flest mål i en enkeltkamp i Champions League noensinne Lionel Messi (Barcelona, 2011/12), Luiz Adriano (Shakhtar Donetsk, 2014/15) 5 mål. Haaland med 5 mål.</p></div>
+        <div class="scrollText"><p>Raskest til å nå ti scoringer i Premier Leagues historie Micky Quinn (Coventry, 1992) 6 kamper. Haaland på 6 kamper.</p></div>
+
+
+    </section>
+    <section class="story">
+        <div class="scrollText" id="first"><p>Misset:</p></div>
+        <div class="scrollText"><p>Mestscorende nordmann totalt i Bundesligas historie. Jørn Andersen (Hamburg, 1994) 67 mål. Haaland på 62 mål </p></div>
+        <div class="scrollText"><p>Yngste til å score 10 mål i Champions Leagues historie Kylian Mbappé (PSG) 18 år 351 d. Haaland 19 år 263 d. </p></div>
+        <div class="scrollText"><p>Yngste til å score hattrick i Bundesligas historie Walter Bechtold (Eintracht Frankfurt, 1965) 18 år 118 d. Haaland 19 år 180 d.</p></div>
+
+    </section>
+    <section class="story">
+        <div class="scrollText" id="first"><p>Pågående:</p></div>
+        <div class="scrollText"><p>Mestscorende for Norge gjennom tidene. Jørgen Juve 33 mål. Haaland på 27 mål</p></div>
+        <div class="scrollText"><p>Flest mål på én sesong i Champions Leagues historie. Cristiano Ronaldo (Real Madrid, 2013/14) 17 mål Haaland på 2 mål</p></div>
+        <div class="scrollText"><p>Flest hattricks på én sesong i Premier Leagues historie Alan Shearer (Blackburn, 1995/96) 5 hattrick Haaland 1 hattrick</p></div>
+        <div class="scrollText"><p>Flest hattricks totalt i Premier Leagues historie Sergio Aguero (Manchester City) 12 hattrick Haaland 5 hattrick.</p></div>
+        <div class="scrollText"><p>Flest ligamål på én sesong blant de fem store ligaene noensinne Lionel Messi (Barcelona, 2011/12) 50 mål. Haaland med 11 mål</p></div>
+        <div class="scrollText"><p>Mestscorende nordmann totalt i Premier Leagues historie Ole Gunnar Solskjær (Manchester United, 2006) 92 mål. Haaland med 47 mål</p></div>
+        <div class="scrollText"><p>Flest mål på øverste nivå i England på én sesong noensinne Dixie Dean (Everton, 1927/28) 60 mål. Haaland med 11 mål</p></div>
+        <div class="scrollText"><p>Flest mål på én sesong på øverste nivå i England på tvers av alle turneringer. Dixie Dean (Everton, 1927/28) 63 mål. Haaland med 13 mål</p></div>
+        <div class="scrollText"><p>Flest klubbmål på én sesong på tvers av alle turneringer Lionel Messi (Barcelona, 2011/12) 73 mål. Haaland med 13 mål</p></div>
+        <div class="scrollText"><p>Flest mål totalt i Champions Leagues historie Cristiano Ronaldo 140 mål. Haaland med 37 mål</p></div>
+        <div class="scrollText"><p>Flest mål totalt i Premier Leagues historie Alan Shearer 260 mål. Haaland med 47 mål</p></div>
+
     </section>
     <section>
         <section class="scrollContainer" id="introduction">
             <div id="comparisonchart" class="scrollText">
                 <h2>Toppscorere i Premier League sesongen 2022/2023. Kampene og målene den sesongen</h2>
-                <p>Dette er top 10 mest scorende i sesongen 2022/2023 i Premier league sesongen der Erling Braut Haaland gjorde sin overgang fra det tyske laget Dortmund til det engelske Premier League laget Manchester City.</p>
+                <p>Dette er topp 10 mest scorende i sesongen 2022/2023 i Premier League sesongen der Erling Braut Haaland gjorde sin overgang fra det tyske laget Dortmund til det engelske Premier League laget Manchester City.</p>
                 <div style="min-height:313px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/uPYhq/embed.js?v=1" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/uPYhq/full.png" alt="" /></noscript></div>
     </section>
     <section class="story">
-        <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Praesent ultricies eget turpis elementum egestas.
-            Maecenas a dapibus diam. Phasellus eu vulputate enim. Morbi pretium accumsan elit, vitae porttitor augue dapibus a.
-            Sed eget nisl vestibulum, faucibus neque quis, tempus libero. Sed ipsum ipsum, laoreet nec pharetra eu, fringilla egestas quam.
-            Integer turpis nisl, lobortis euismod mollis ac, euismod ut tellus. Nunc semper sem vel mauris commodo pretium in in leo.
-            Vivamus posuere ullamcorper velit, nec facilisis elit. Cras vel ullamcorper nisl. Nam sed massa dolor.
-            Phasellus consequat congue diam, non mattis urna accumsan vel.
-            Suspendisse in gravida eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        </p></div>
+        <div class="scrollText" id="first"><p>Hva mer har Haaland fått til i sin debutsesong?</p></div>
+        <div class="scrollText"><p>I sesongen 2022/2023 fikk Erling Braut Haaland gullstøvelen i sin debutsesong i Premier League, gullstøvelen er toppscorer tittelen i Premier league, Haaland fikk 36 mål, noe som er 6 mer enn Harry Kane, som fikk 30 mål.</p></div>
+        <div class="scrollText"><p>Harry Kane spilte i Tottenham sesongen 2022/2023 da han kom på andre plass om toppscorer tittelen med sine 30 mål bak Haaland.</p></div>
     </section>
-    <section class="map-section">
-        <div class="map-container">
-            <!-- Add a div element for the map -->
-            <div id="mapContainer" style="width: 100vw; height: 100vh; z-index: 1; top: 0; left: 0;"></div>
-        </div>
-        <div id="scrollContainer" class="scrollText">
-            <article class="scrollBox" id="start">
-                <h3>Ekstremværet hans</h3>
-                <p>Scroll ned for å kunne se hvor mye denne hendelsen skadet området dette skjedde. Vi har valgt å ta med 5 av de stedene dette skjedde. Det skadeomfanget er forskjell fra sted til sted, ettersom de største skadene skjedde i innlandet og nordlige deler i Viken.</p>
-            </article>
-            <article class="scrollBox" id="sted1">
-                <h3>Nesbyen</h3>
-                <p>Den 9 August 2023, ble Hallingsdalselva og Rukkedalselva har flommet over sine bredder. Deler av Nesbyen sentrum og riksvei 7 ble lagt under vann.</p>
-            </article>
-            <article class="scrollBox" id="sted2">
-                <h3>Våler</h3>
-                <p>Den 9 August 2023, Ble demningen ved kraftverket Braskereidfoss rast, noe som har ført til store skader. Et titals hus ble evakuert.</p>
-            </article>
-            <article class="scrollBox" id="sted3">
-                <h3>Leirsund</h3>
-                <p>Den 8 August 2023, hadde elven Leira i Lillestrøm steget enormt. Leirsund bro både bilbroen og gangebroen er oversvømt.</p>
-            </article>
-            <article class="scrollBox" id="sted4">
-                <h3>Valdres</h3>
-                <p>Den 9 August 2023, ble Møninbru i valdres totalt oversvømt som følge av ekstremværet. Innbyggerne frykter nå at bruen skal ryke.</p>
-            </article>
-            <article class="scrollBox" id="sted5">
-                <h3>Hemsedal</h3>
-                <p>Den 8 August 2023, ble et spikertelt og campingvogn dratt med av vannmassene ned elven Hemsil og krasjet i en bru i Hemsedal sentrum.</p>
-            </article>
-            <article class="scrollBox" id="end">
-                <p>Her ser du hendelsene som har skjedd i de forskjellige områdene der ekstremværet Hans herjet da det traff Østlandet fra 7 August 2023. Dette ekstremværet har kostet kommunene over 700 millioner kroner. Uværet Hans har ført til i sin helhet til store ødeleggelser og flere tusen er evakuert. De største skadene er i Innlandet og nordlige delene av Viken.</p>
-            </article>
-            <article class="scrollBox">
-                <p>Heldigvis så har dette uværet trukket seg vekk fra dette området i nåtiden, så da begynner arbeidet med å gjøre en opprydding og fikse det dette uværet har ødelagt i sin ferd.</p>
-            </article>
-        </div>
-    </section>
+
+    <main>
+        <nav id="businesses"></nav>
+        <div id="map"></div>
+    </main>
     
     <script>
-        const centerLat = 54.008;
-        const centerLong = 14.194;
-        let map = L.map('mapContainer', {
+        const centerLat = 55.008;
+        const centerLong = 15.194;
+    
+        const places = [
+            { name: "Map", lat: centerLat, long: centerLong, description: "Klikk her for å se hele kartet" },
+            { name: "Bryne", lat: 58.7354, long: 5.6477, description: "Fra sesong 2016 til 2017, spilte han for det norske laget bryne" },
+            { name: "Molde", lat: 62.7377, long: 7.1590, description: "Fra sesong 2017 til 2019, spilte han for det norske laget Molde" },
+            { name: "Red Bull Salzburg", lat: 47.8028, long: 13.0566, description: "Fra sesong 2019 til 2020, spilte han for det østerrikske laget Red Bull Salzburg" },
+            { name: "Borussia Dortmund", lat: 51.5079, long: 7.4703, description: "Fra sesong 2020 til 2022, spilte han for det tyske laget Borussia Dortmund" },
+            { name: "Manchester City", lat: 53.4830, long: -2.1977, description: "Fra sesong 2022, startet han å spille for det engelske Premier League laget Manchester City, dette laget spiller han for fortsatt i 2023" }
+        ]
+    
+        let map = L.map('map', {
             center: [centerLat, centerLong],
-            zoom: 5,
-            scrollWheelZoom: false
+            zoom: 4
         })
+    
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
-
-        const places = [
-            {name: "Nesbyen", lat: 60.5478, long: 9.0582},
-            {name: "Våler", lat: 60.8141, long: 11.9765},
-            {name: "Leirsund", lat: 59.9969, long: 11.0874},
-            {name: "Valdres", lat: 60.4708, long: 11.7142},
-            {name: "Hemsedal", lat: 60.9344, long: 8.5961}
-        ]
-
-        function isInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                (rect.top <= 0 && rect.bottom >= 0) || 
-                (rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth))
-            );
-        }
-
-        const markers = places.map((place) => {
-            const marker = L.marker([place.lat, place.long]).addTo(map).bindPopup(place.name);
-            return marker.getLatLng();
+    
+        let navHTML = "";
+    
+        places.forEach((place) => {
+            if (place.name !== "Map") {
+                const marker = L.marker([place.lat, place.long]).addTo(map);
+                marker.bindPopup(`<b>${place.name}</b><br>${place.description}`);
+            }
+    
+            navHTML += `<article><h3>${place.name}</h3><p>${place.description}</p>`;
+    
+            if (place.name === "Map") {
+                navHTML += `<button onclick="map.flyTo([${centerLat},${centerLong}], 4)">Zoom Out</button>`;
+            } else {
+                navHTML += `<button onclick="map.flyTo([${place.lat},${place.long}], 15)">Vis på kart</button>`;
+            }
+    
+            navHTML += `</article>`;
         });
-
-        const bounds = L.latLngBounds(markers);
-
-
-        document.addEventListener('scroll', function () {
-            if(isInViewport(document.getElementById("start"))) {
-                map.flyTo([centerLat, centerLong], 5)
-            }
-            if(isInViewport(document.getElementById("sted1"))) {
-                map.flyTo([60.5478, 9.0582], 10)
-            }
-            if(isInViewport(document.getElementById("sted2"))) {
-                map.flyTo([60.8141, 11.9765], 10)
-            }
-            if(isInViewport(document.getElementById("sted3"))) {
-                map.flyTo([59.9969, 11.0874], 10)
-            }
-            if(isInViewport(document.getElementById("sted4"))) {
-                map.flyTo([60.4708, 11.7142], 10)
-            }
-            if(isInViewport(document.getElementById("sted5"))) {
-                map.flyTo([60.9344, 8.5961], 10)
-            }
-            if(isInViewport(document.getElementById("end"))) {
-                map.flyTo([centerLat, centerLong], 6)
-            }
-        }, {
-            passive: true
-        });
+    
+        document.getElementById("businesses").innerHTML = navHTML;
     </script>
     
-    <footer class="end">
-        <p>Authors: Joachim Halvorsen Bjerkland, Kasper Keiserud Mikalsen, Martin Samuelsen.</p>
-    </footer>
+    
+
+        <section class="story">
+            <div class="scrollText" id="first"><p>Sesong 2023/2024, hvordan har Haaland klart seg i sin andre sesong i Manchester City hittil?</p></div>
+            <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies eget turpis elementum egestas.</p></div>
+            <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies eget turpis elementum egestas.</p></div>
+        </section>
+
+        <section class="story">
+            <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent ultricies eget turpis elementum egestas.
+                Maecenas a dapibus diam. Phasellus eu vulputate enim. Morbi pretium accumsan elit, vitae porttitor augue dapibus a.
+                Sed eget nisl vestibulum, faucibus neque quis, tempus libero. Sed ipsum ipsum, laoreet nec pharetra eu, fringilla egestas quam.
+                Integer turpis nisl, lobortis euismod mollis ac, euismod ut tellus. Nunc semper sem vel mauris commodo pretium in in leo.
+                Vivamus posuere ullamcorper velit, nec facilisis elit. Cras vel ullamcorper nisl. Nam sed massa dolor.
+                Phasellus consequat congue diam, non mattis urna accumsan vel.
+                Suspendisse in gravida eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p></div>
+        </section>
+        <section class="story">
+            <div class="scrollText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent ultricies eget turpis elementum egestas.
+                Maecenas a dapibus diam. Phasellus eu vulputate enim. Morbi pretium accumsan elit, vitae porttitor augue dapibus a.
+                Sed eget nisl vestibulum, faucibus neque quis, tempus libero. Sed ipsum ipsum, laoreet nec pharetra eu, fringilla egestas quam.
+                Integer turpis nisl, lobortis euismod mollis ac, euismod ut tellus. Nunc semper sem vel mauris commodo pretium in in leo.
+                Vivamus posuere ullamcorper velit, nec facilisis elit. Cras vel ullamcorper nisl. Nam sed massa dolor.
+                Phasellus consequat congue diam, non mattis urna accumsan vel.
+                Suspendisse in gravida eros. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p></div>
+            <div class="scrollText"><p></p></div>
+            <div class="scrollText"><p></p></div>
+            <div class="scrollText"><p></p></div>
+
+        </section>
+        <footer class="end">
+            <p>Authors: Joachim Halvorsen Bjerkland, Kasper Keiserud Mikalsen, Martin Samuelsen.</p>
+          </footer>
 </body>
 </html>
