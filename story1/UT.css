@@ -1,5 +1,5 @@
 .top-nav {
-    background-color: #2e0a0a;
+    background-color: #000000;
     color: #fff;
     padding: 10px 80px;
     text-align: right;
@@ -27,7 +27,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #000;
+    background-color: #000000;
     font-size: 16px;
 }
 
@@ -45,8 +45,8 @@ header {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-image: url("https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    align-items: start;
+    background-image: url("img/fc24.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -57,12 +57,19 @@ h1 {
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     margin: 0;
+    padding: 2rem;
+    text-transform: uppercase;
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
 
 header a {
     color: #fff;
     font-size: 1.5rem;
     padding: 1rem;
+    background-color: #000;
+    border-radius: 10px;
 }
 
 .scrollContainer {
@@ -90,7 +97,7 @@ header a {
   }
 
 #introduction {
-    background-image: url("https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Adjusted mobile-friendly background image */
+    background-image: url("img/odegaard.jpg"); /* Adjusted mobile-friendly background image */
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
