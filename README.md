@@ -20,11 +20,8 @@ Kilder:
 
 Story 3:
 Kilder:
-(Storyene vi brukte i denne oppgaven)
 https://www.vg.no/spesial/2023/hans-kart/
 https://www.aftenposten.no/emne/ekstremvaeret-hans
---------------------------------------------------------------------
-Her er alle kildene til koden vi har lagd:
 https://www.quackit.com/html/codes/html_scroll_box.cfm (Scroll box)
 https://www.w3schools.com/tags/tag_article.asp (Article tag)
 https://www.w3schools.com/tags/tag_script.asp (Script tag HTML)
