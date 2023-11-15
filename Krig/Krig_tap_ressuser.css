@@ -1,0 +1,237 @@
+/*Litt kilder her, men mest i kilde dokumentet*/
+/*kilde generelt over koder og sånn har jeg brukt https://www.w3schools.com/*/
+
+
+/*Litt generell kode for selve oppsettet på siden, og scroll-behavior*/
+html {
+    scroll-behavior: smooth;
+    background-color: #000;
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+     margin: auto;
+     padding: 0;
+     word-break: break-word;
+     filter: contrast(1);
+     font-family: 'Roboto', sans-serif;
+   }
+
+
+
+
+/*Her er koden for å scrolle nedover på siden*/
+.nedover {
+    width: 100vw;
+    min-height: 60vh;
+    overflow: hidden;
+    transition: background-image 3s;
+}
+
+
+/*Her er felles kode for nav linkene*/
+.top-nav {
+    background-color: #2e0a0a;
+    color: #000000;
+    padding: 10px 80px;
+    text-align: right;
+    width: 87.5vw;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+/*Her starter selve introduksjonen*/
+#introduksjon{
+    background-image: linear-gradient(rgba(51, 82, 210, 0.7), rgba(55, 83, 184, 0.7)), url(dmitry-bukhantsov-ptTYUzuhrNA-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white;
+    border: 10px solid rgb(184, 184, 184);
+    border-radius: 10px;
+    text-shadow: 6px 6px 6px #000;
+}
+
+
+
+
+/*Header starter her*/
+header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(19, 37, 108, 0.7), rgba(58, 66, 99, 0.7)),  url(dan-kb-gFGL-k454ds-unsplash.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*boks h1 kode starter her*/
+#boks h1{
+    font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        margin: auto;
+        word-break: break-word;
+        line-height: 1.5;
+        padding: 1rem;
+        white-space: wrap;
+
+        color: white;
+        text-shadow: 6px 6px 6px #000;    
+    }
+
+
+/*boks kode*/    
+#boks{
+    width: 90%;
+    position: absolute;
+    text-align: center;   
+}
+
+
+/*Kode for oppsettet på teksten*/
+.story_tekst {
+    margin: 0.5rem auto; 
+    max-width: 90%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/*Kode for oppsettet på grafen*/
+.graf{
+    text-align: center;
+    max-width: 50rem;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    padding: 1rem;
+    border: 10px solid rgb(124, 124, 124);
+    border-radius: 10px;
+    
+}
+
+/*Boks p kode*/
+#boks p{
+    font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        margin: auto;
+        word-break: break-word;
+        line-height: 1.5;
+        padding: 1rem;
+        white-space: wrap;
+
+        color: white;
+        text-shadow: 6px 6px 6px #000;
+        margin: 0;
+}
+
+
+
+/*Kode for all teksten som har noe med story å gjøre*/
+.tekst{
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    word-break: break-word;
+    line-height: 2.5;
+    padding: 1rem;
+    border: 10px solid rgb(124, 124, 124);
+    border-radius: 10px;
+}
+
+
+
+/*Hover kode https://www.w3schools.com/cssref/sel_hover.php*/
+a:hover { 
+    text-shadow: 0 0 20px black; 
+}
+
+
+/*Kode for boks a*/
+#boks a{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: auto;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+
+/*Slutt delen*/
+.slutt {
+    color: black;
+    background-color: black;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 12rem;
+}
+
+/*Kode for å kunne gjøre alt mindre når sjermen blir mindre*/
+@media screen and (max-width: 768px) {
+    header {
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header a {
+        font-size: 1.2rem;
+    }
+
+    .scrollContainer {
+        min-height: 40vh;
+    }
+
+    .story, .scrollText {
+        font-size: 16px;
+    }
+}
