@@ -1,6 +1,8 @@
+/*Litt kilder her, men mest i kilde dokumentet*/
 /*kilde generelt over koder og sånn har jeg brukt https://www.w3schools.com/*/
 
-/*Litt generell kode for sleve oppsettet på siden*/
+
+/*Litt generell kode for selve oppsettet på siden, og scroll-behavior*/
 html {
     scroll-behavior: smooth;
     background-color: #000;
@@ -20,8 +22,6 @@ html {
 
 
 /*Her er koden for å scrolle nedover på siden*/
-
-
 .nedover {
     width: 100vw;
     min-height: 60vh;
@@ -31,7 +31,6 @@ html {
 
 
 /*Her er felles kode for nav linkene*/
-
 .top-nav {
     background-color: #2e0a0a;
     color: #000000;
@@ -64,9 +63,8 @@ html {
 
 
 /*Her starter selve introduksjonen*/
-
 #introduksjon{
-    background-image: linear-gradient(rgba(51, 82, 210, 0.7), rgba(55, 83, 184, 0.7)), url(dest\ tanks.jpg);
+    background-image: linear-gradient(rgba(51, 82, 210, 0.7), rgba(55, 83, 184, 0.7)), url(dmitry-bukhantsov-ptTYUzuhrNA-unsplash.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,14 +79,13 @@ html {
 
 
 /*Header starter her*/
-
 header{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(19, 37, 108, 0.7), rgba(58, 66, 99, 0.7)),  url(tank\ nose.jpg);
+    background-image: linear-gradient(rgba(19, 37, 108, 0.7), rgba(58, 66, 99, 0.7)),  url(dan-kb-gFGL-k454ds-unsplash.jpg);
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -97,7 +94,6 @@ header{
 
 
 /*boks h1 kode starter her*/
-
 #boks h1{
     font-size: 2rem;
         font-family: 'Roboto', sans-serif;
@@ -117,15 +113,6 @@ header{
     width: 90%;
     position: absolute;
     text-align: center;   
-}
-
-
-/*Kontaineren starter her*/
-.container {
-    width: 100vw;
-    min-height: 50vh;
-    overflow: hidden;
-    transition: background-image 2s;
 }
 
 
@@ -155,7 +142,6 @@ header{
 }
 
 /*Boks p kode*/
-
 #boks p{
     font-size: 18px;
         font-family: 'Roboto', sans-serif;
@@ -169,6 +155,7 @@ header{
         text-shadow: 6px 6px 6px #000;
         margin: 0;
 }
+
 
 
 /*Kode for all teksten som har noe med story å gjøre*/
@@ -188,6 +175,8 @@ header{
     border: 10px solid rgb(124, 124, 124);
     border-radius: 10px;
 }
+
+
 
 /*Hover kode https://www.w3schools.com/cssref/sel_hover.php*/
 a:hover { 
