@@ -30,13 +30,13 @@ html {
 }
 
 
-/*Her er felles kode for nav linkene*/
+/*Her er kode for nav linkene*/
 .top-nav {
     background-color: #2e0a0a;
     color: #000000;
     padding: 10px 80px;
     text-align: right;
-    width: 87.5vw;
+    width: 100vw;
 }
 
 .top-nav ul {

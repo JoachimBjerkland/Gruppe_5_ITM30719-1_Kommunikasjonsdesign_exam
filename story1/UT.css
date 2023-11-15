@@ -1,3 +1,4 @@
+/*Her er kode for nav linkene*/
 .top-nav {
     background-color: #000000;
     color: #fff;
@@ -25,13 +26,14 @@
     color: #fff;
 }
 
+
+/*Resten av koden*/
+
 html {
     scroll-behavior: smooth;
     background-color: #000000;
     font-size: 16px;
 }
-
-
 
 
 html {

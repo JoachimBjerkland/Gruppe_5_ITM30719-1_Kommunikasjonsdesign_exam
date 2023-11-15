@@ -1,3 +1,4 @@
+/*Her er kode for nav linkene*/
 .top-nav {
     background-color: rgba(0, 0, 0, 0.7);
     background-color: #2e0a0a;
@@ -27,6 +28,7 @@
     color: #ffffff;
 }
 
+/*Resten av koden på css*/
 html {
     scroll-behavior: smooth;
     background-color: #000;

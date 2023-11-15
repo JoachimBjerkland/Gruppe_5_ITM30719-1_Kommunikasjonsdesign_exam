@@ -1,9 +1,10 @@
+/*Her er kode for nav linkene*/
 .top-nav {
     background-color: #2e0a0a;
     color: #000000;
     padding: 10px 80px;
     text-align: right;
-    width: 87.5vw;
+    width: 90vw;
 }
 
 .top-nav ul {
@@ -26,6 +27,7 @@
     color: #fff;
 }
 
+/*Resten av koden der kildene ligger i readme fila*/
 html {
     scroll-behavior: smooth;
     background-color: #bab8c5;
