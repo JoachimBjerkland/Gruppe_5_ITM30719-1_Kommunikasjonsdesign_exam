@@ -17,6 +17,11 @@ https://www.w3schools.com/tags/tag_nav.asp
 
 Story 2:
 Kilder:
+https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html
+https://www.themoscowtimes.com/2023/05/31/russias-tank-losses-in-ukraine-surpass-2000-osint-report-a81346
+
+https://www.aa.com.tr/en/russia-ukraine-war/nearly-20-000-russian-troops-killed-in-war-ukrainian-military-claims/2564431
+https://www.reuters.com/world/europe/russia-awards-medals-after-claiming-hits-leopard-tanks-us-bradleys-ukraine-2023-06-11/
 
 Story 3:
 Kilder:
