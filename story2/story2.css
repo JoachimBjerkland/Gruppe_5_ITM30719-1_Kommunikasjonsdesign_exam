@@ -1,76 +1,78 @@
-.top-nav {
-    background-color: #2e0a0a;
-    color: #fff;
-    padding: 10px 80px;
-    text-align: right;
-}
-
-.top-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.top-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.top-nav ul li:last-child {
-    margin-right: 0;
-}
-
-.top-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
 html {
     scroll-behavior: smooth;
     background-color: #000;
     font-size: 16px;
 }
 
+*{
+    box-sizing: border-box;
+     margin: auto;
+     padding: 0;
+     word-break: break-word;
+     filter: contrast(1);
+     font-family: 'Roboto', sans-serif;
+   }
 
-html {
-    scroll-behavior: smooth;
-    background-color: #000;
-    font-size: 16px;
+.scroll {
+    width: 100vw;
+    min-height: 60vh;
+    overflow: hidden;
+    transition: background-image 3s;
 }
 
-header {
+#introduksjon{
+    background-image: linear-gradient(rgba(51, 82, 210, 0.7), rgba(55, 83, 184, 0.7)), url(dest\ tanks.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white;
+    text-shadow: 6px 6px 6px #000;
+}
+
+
+
+header{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("");
+    background-image: linear-gradient(rgba(19, 37, 108, 0.7), rgba(58, 66, 99, 0.7)),  url(tank\ nose.jpg);
+    text-align: center;
     background-size: cover;
     background-position: center;
-    text-align: center;
 }
 
-h1 {
+
+#boks h1{
     font-size: 2rem;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    margin: 0;
+        font-family: 'Roboto', sans-serif;
+        margin: auto;
+        word-break: break-word;
+        line-height: 1.5;
+        padding: 1rem;
+        white-space: wrap;
+
+        color: white;
+        text-shadow: 6px 6px 6px #000;    
+    }
+
+#boks{
+    width: 90%;
+    position: absolute;
+    text-align: center;   
 }
 
-header a {
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem;
-}
 
-.scrollContainer {
+.container {
     width: 100vw;
     min-height: 50vh;
     overflow: hidden;
     transition: background-image 2s;
 }
 
-.story, .scrollText {
+.story {
     margin: 0.5rem auto; 
     max-width: 90%;
     padding: 1rem;
@@ -79,16 +81,87 @@ header a {
     color: #fff;
 }
 
-#introduction {
-    background-image: url("");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.graph{
+    text-align: center;
+    max-width: 50rem;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    padding: 1rem;
+    
 }
 
-.end {
-    color: #fff;
+#boks p{
+    font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        margin: auto;
+        word-break: break-word;
+        line-height: 1.5;
+        padding: 1rem;
+        white-space: wrap;
+
+        color: white;
+        text-shadow: 6px 6px 6px #000;
+        margin: 0;
+}
+
+
+.text{
+    margin: 50vh auto;
+    max-width: 50rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    word-break: break-word;
+    line-height: 2.5;
+    padding: 1rem;
+}
+
+a:hover { 
+    text-shadow: 0 0 20px black; 
+}
+
+#boks a{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: auto;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.slutt1 {
+    color: black;
+    background-color: black;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 12rem;
+}
+.slutt {
+    color: black;
+    background-color: black;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    max-width: 12rem;
 }
 
 @media screen and (max-width: 768px) {
