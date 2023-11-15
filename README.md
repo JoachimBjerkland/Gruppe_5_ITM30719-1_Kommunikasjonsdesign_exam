@@ -1,7 +1,7 @@
 # ITM30719_Kommunikasjonsdesign_exam
 ITM30719 Kommunikasjonsdesign eksamens github
 
-Her er alle kildene vi har brukt til denne eksamensinnleveringen
+Her er alle kildene vi har brukt til denne eksamensinnleveringen (Flere av kildene som står spesifikt til en story, har mye lik kilder som de andre storyene, flere av kildene vi har funnet er like for alle kodene.)
 
 Story 1:
 Kilder:
