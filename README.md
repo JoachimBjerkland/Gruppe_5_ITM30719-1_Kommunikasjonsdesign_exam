@@ -13,6 +13,7 @@ https://www.thegamer.com/ea-made-over-1-5-billion-from-ultimate-team-during-the-
 https://www.gamer.no/artikler/forbrukerradet-roper-varsko-et-klart-behov-for-a-regulere-lootbokser/514931
 https://www.ea.com/nb-no/games/ea-sports-fc/news/fc-pack-probabilities
 https://store.playstation.com/no-no/search/fc%20points/
+https://www.w3schools.com/tags/tag_nav.asp
 
 Story 2:
 Kilder:
@@ -51,11 +52,35 @@ https://www.w3schools.com/css/css_dimension.asp
 https://www.w3schools.com/cssref/pr_border.php
 https://www.w3schools.com/cssref/pr_class_position.php
 https://www.w3schools.com/css/css_display_visibility.asp (display block)
+https://www.w3schools.com/tags/tag_nav.asp
 
 
 Story 4:
 Kilder:
+Info fra saken er hentet fra de forskjellige tabs inne på nettsiden på venstre side på siden.
 https://www.vg.no/spesial/haaland/
 https://snl.no/Erling_Braut_Haaland
 https://datawrapper.dwcdn.net/kcK9C/1/ (Selve tabellen med stats)
 https://www.w3schools.com/css/tryit.asp?filename=trycss_line-height (Linje og avsnittavstand)
+https://developer.mozilla.org/en-US/docs/Web/CSS/display
+https://www.w3schools.com/tags/tag_map.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/border
+https://www.w3schools.com/tags/tag_nav.asp
+https://www.w3schools.com/html/html_div.asp
+https://www.w3schools.com/html/html_id.asp
+https://www.w3schools.com/html/html_classes.asp
+https://hivekit.io/tutorials-and-examples/usage-with/google-maps/
+https://www.w3schools.com/jsref/jsref_let.asp
+https://leafletjs.com/reference.html
+https://leafletjs.com/ (Her fant vi L.tileLayer)
+https://developers.google.com/maps/documentation/javascript/place-search
+https://www.w3schools.com/tags/tag_footer.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/list-style
+https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right
+https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/color
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
+https://www.w3schools.com/cssref/pr_background-image.php
