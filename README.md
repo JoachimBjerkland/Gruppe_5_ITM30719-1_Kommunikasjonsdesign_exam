@@ -59,6 +59,7 @@ https://www.vg.no/spesial/haaland/
 https://snl.no/Erling_Braut_Haaland
 https://datawrapper.dwcdn.net/kcK9C/1/ (Selve tabellen med stats)
 https://www.w3schools.com/css/tryit.asp?filename=trycss_line-height (Linje og avsnittavstand)
+https://www.w3schools.com/tags/tag_section.asp
 https://developer.mozilla.org/en-US/docs/Web/CSS/display
 https://www.w3schools.com/tags/tag_map.asp
 https://developer.mozilla.org/en-US/docs/Web/CSS/border
