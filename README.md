@@ -30,6 +30,9 @@ https://www.w3schools.com/cssref/pr_scroll-behavior.php
 Media Queries:
 https://www.w3schools.com/css/css3_mediaqueries.asp
 
+Graf:
+https://www.datawrapper.de/_/kBsId/?v=3
+
 Generelt har https://www.w3schools.com/ blitt brukt til meste av koden
 Navigasjon kode brukte er den som ble brukt i timen 20/9
 
