@@ -39,10 +39,10 @@ https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.htm
 https://www.themoscowtimes.com/2023/05/31/russias-tank-losses-in-ukraine-surpass-2000-osint-report-a81346
 
 Bilde 1 krig:
-[https://www.aa.com.tr/en/russia-ukraine-war/nearly-20-000-russian-troops-killed-in-war-ukrainian-military-claims/2564431](https://unsplash.com/photos/a-tank-with-a-gun-ptTYUzuhrNA)
+https://www.aa.com.tr/en/russia-ukraine-war/nearly-20-000-russian-troops-killed-in-war-ukrainian-military-claims/2564431 https://unsplash.com/photos/a-tank-with-a-gun-ptTYUzuhrNA
 Bilde 2 krig:
-[https://www.reuters.com/world/europe/russia-awards-medals-after-claiming-hits-leopard-tanks-us-bradleys-ukraine-2023-06-11/
-](https://unsplash.com/photos/green-battle-tank-on-road-during-daytime-gFGL-k454ds)
+https://www.reuters.com/world/europe/russia-awards-medals-after-claiming-hits-leopard-tanks-us-bradleys-ukraine-2023-06-11/
+https://unsplash.com/photos/green-battle-tank-on-road-during-daytime-gFGL-k454ds
 
 Story 3:
 Kilder:
