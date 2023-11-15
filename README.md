@@ -15,8 +15,10 @@ https://www.ea.com/nb-no/games/ea-sports-fc/news/fc-pack-probabilities
 https://store.playstation.com/no-no/search/fc%20points/
 https://www.w3schools.com/tags/tag_nav.asp
 
-Story 2:
+Krig story:
 Kilder:
+Navigasjon kode brukte er den som ble brukt i timen 20/9
+http://www.it.hiof.no/~toremake/komdesressurser/
 https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html
 https://www.themoscowtimes.com/2023/05/31/russias-tank-losses-in-ukraine-surpass-2000-osint-report-a81346
 
