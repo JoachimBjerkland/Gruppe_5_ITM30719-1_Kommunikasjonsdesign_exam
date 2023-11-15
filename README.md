@@ -20,12 +20,17 @@ Kilder:
 
 Generelt har https://www.w3schools.com/ blitt brukt til meste av koden
 Navigasjon kode brukte er den som ble brukt i timen 20/9
+
+Nyhets kilder:
 http://www.it.hiof.no/~toremake/komdesressurser/
 https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html
 https://www.themoscowtimes.com/2023/05/31/russias-tank-losses-in-ukraine-surpass-2000-osint-report-a81346
 
+Bilde 1 krig:
 https://www.aa.com.tr/en/russia-ukraine-war/nearly-20-000-russian-troops-killed-in-war-ukrainian-military-claims/2564431
+Bilde 2 krig:
 https://www.reuters.com/world/europe/russia-awards-medals-after-claiming-hits-leopard-tanks-us-bradleys-ukraine-2023-06-11/
+
 
 Story 3:
 Kilder:
