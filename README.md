@@ -17,6 +17,8 @@ https://www.w3schools.com/tags/tag_nav.asp
 
 Krig story:
 Kilder:
+
+Generelt har https://www.w3schools.com/ blitt brukt til meste av koden
 Navigasjon kode brukte er den som ble brukt i timen 20/9
 http://www.it.hiof.no/~toremake/komdesressurser/
 https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html
