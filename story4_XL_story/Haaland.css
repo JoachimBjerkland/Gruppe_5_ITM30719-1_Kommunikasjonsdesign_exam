@@ -38,25 +38,31 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/15/FC_RB_Salzburg_versus_Wolfsberger_AC_%2810._August_2019%29_08.jpg");
-    background-size: cover;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Erling_Haaland_2023_%28cropped_square%29.jpg/600px-Erling_Haaland_2023_%28cropped_square%29.jpg?20230418190252");
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     text-align: center;
 }
 
+
 h1 {
-    font-size: 3rem;
-    color: #000000;
+    font-size: 2.8rem;
+    color: #d4d4d4;
     text-shadow: 1px 1px 1px #000;
     margin: 0;
     font-weight: bold;
+    margin-top: 130px;
 }
 
 header a {
-    color: #000000;
-    font-size: 3rem;
+    color: #d4d4d4;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 2.33rem;
     padding: 1rem;
+    margin-bottom: 130px;
 }
+
 
 
 .story, .scrollText {
