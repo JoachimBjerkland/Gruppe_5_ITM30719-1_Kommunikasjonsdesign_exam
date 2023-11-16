@@ -35,7 +35,9 @@ Navigasjon kode brukte er den som ble brukt i timen 20/9
 
 Nyhets kilder:
 http://www.it.hiof.no/~toremake/komdesressurser/
+
 https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html
+
 https://www.themoscowtimes.com/2023/05/31/russias-tank-losses-in-ukraine-surpass-2000-osint-report-a81346
 
 Bilde 1 krig:
