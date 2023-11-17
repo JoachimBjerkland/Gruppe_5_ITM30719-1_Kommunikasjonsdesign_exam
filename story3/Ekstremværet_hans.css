@@ -29,6 +29,7 @@
     color: #ffffff;
 }
 
+/* Media Query */
 @media screen and (max-width: 450px) {
     .top-nav {
         text-align: center;

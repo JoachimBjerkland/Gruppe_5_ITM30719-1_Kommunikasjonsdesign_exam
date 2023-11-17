@@ -27,12 +27,12 @@
     color: #fff;
 }
 
-/* Media Query for smaller screens, e.g., mobile phones */
+/* Media Query */
 @media screen and (max-width: 600px) {
     .top-nav {
         text-align: center;
         padding: 10px;
-        width: 90vw; /* Adjust as needed for full width */
+        width: 90vw;
     }
 
     .top-nav ul {
