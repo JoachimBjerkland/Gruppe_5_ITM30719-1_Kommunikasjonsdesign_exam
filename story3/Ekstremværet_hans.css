@@ -1,4 +1,5 @@
 /*Her er kode for nav linkene*/
+/* Vanlig stil for .top-nav */
 .top-nav {
     background-color: rgba(0, 0, 0, 0.7);
     background-color: #2e0a0a;
@@ -27,6 +28,23 @@
     text-decoration: none;
     color: #ffffff;
 }
+
+@media screen and (max-width: 450px) {
+    .top-nav {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .top-nav ul {
+        text-align: center;
+    }
+
+    .top-nav ul li {
+        display: inline;
+        margin: 0 0 10px 0;
+    }
+}
+
 
 /*Resten av koden på css*/
 html {
