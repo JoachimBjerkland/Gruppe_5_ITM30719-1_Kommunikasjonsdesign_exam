@@ -18,6 +18,9 @@ https://www.w3schools.com/tags/tag_nav.asp
 Krig story:
 Kilder:
 
+Border:
+https://www.w3schools.com/css/css_border.asp
+
 Hover:
 https://www.w3schools.com/cssref/sel_hover.php
 
