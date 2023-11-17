@@ -15,7 +15,7 @@
 
 .top-nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .top-nav ul li:last-child {
@@ -25,6 +25,27 @@
 .top-nav a {
     text-decoration: none;
     color: #fff;
+    border: 1px solid white;
+    padding: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+    .top-nav {
+        text-align: center;
+        padding: 10px;
+        width: 90vw;
+    }
+
+    .top-nav ul {
+        text-align: center;
+    }
+
+    .top-nav ul li {
+        display: inline;
+        margin: 0 0 10px 0;
+    }
 }
 
 

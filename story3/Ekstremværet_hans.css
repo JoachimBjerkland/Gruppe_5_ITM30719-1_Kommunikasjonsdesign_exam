@@ -26,7 +26,10 @@
 
 .top-nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
+    border: 1px solid white;
+    padding: 4px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Media Query */
