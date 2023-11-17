@@ -30,19 +30,19 @@ html {
 }
 
 
-/*Her er kode for nav linkene*/
+/*Her er felles kode for nav linkene*/
 .top-nav {
     background-color: #2e0a0a;
     color: #000000;
-    padding: 10px 80px;
+    padding: 25px 80px;
     text-align: right;
     width: 87.5vw;
+    
 }
 
 .top-nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
 }
 
 .top-nav ul li {
@@ -57,6 +57,9 @@ html {
 .top-nav a {
     text-decoration: none;
     color: #fff;
+    border: 1px solid white;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -214,24 +217,72 @@ a:hover {
 }
 
 /*Kode for å kunne gjøre alt mindre når sjermen blir mindre*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     header {
-        height: 50vh;
+        width: 100%;
+        height: 100vh;
     }
 
-    h1 {
-        font-size: 1.5rem;
+
+#boks{
+        font-size: 12px;
+        width: 90%;
+        position: absolute;
+        text-align: center;   
     }
 
-    header a {
+    
+
+#introduksjon{
+        line-height: 1,5;
+
+}
+
+.top-nav {
+        background-color: #2e0a0a;
+        color: #000000;
+        text-align: center;
+        padding: 10px;
+        width: 90vw;
+        height: 6rem;
+}
+
+.top-nav ul li {
+    display: inline;
+
+        margin: 0 0 10px 0;
+ }
+.top-nav ul {
+    text-align: center;
+}
+    
+    
+    
+.top-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+        border: 1px solid white;
+        line-height: 2;
+        padding: 5px;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+}
+
+header a {
         font-size: 1.2rem;
-    }
+}
 
-    .scrollContainer {
+.nedover {
         min-height: 40vh;
-    }
+}
 
-    .story, .scrollText {
+.story_tekst, .tekst, .story {
+        font-size: 14px;
+}
+
+
+.slutt{
         font-size: 16px;
-    }
+}
 }
