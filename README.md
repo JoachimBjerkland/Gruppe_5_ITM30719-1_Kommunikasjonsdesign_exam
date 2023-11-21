@@ -3,6 +3,13 @@ ITM30719 Kommunikasjonsdesign eksamens github
 
 Her er alle kildene vi har brukt til denne eksamensinnleveringen (Flere av kildene som står spesifikt til en story, har mye lik kilder som de andre storyene, flere av kildene vi har funnet er like for alle kodene.)
 
+Her er alle sine kanditatnummer:
+Joachim Halvorsen Bjerkland (Kandidatnummer: 460)
+Kasper Keiserud Mikalsen (Kandidatnummer: )
+Martin Samuelsen (Kandidatnummer: )
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Story 1:
 Kilder:
 https://www.ea.com/en-ca/news/fifa-points-belgium
