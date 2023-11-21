@@ -8,7 +8,7 @@ Joachim Halvorsen Bjerkland (Kandidatnummer: 460)
 
 Kasper Keiserud Mikalsen (Kandidatnummer: 449)
 
-Martin Samuelsen (Kandidatnummer: )
+Martin Samuelsen (Kandidatnummer: 448)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -22,7 +22,9 @@ https://www.thegamer.com/ea-made-over-1-5-billion-from-ultimate-team-during-the-
 https://www.gamer.no/artikler/forbrukerradet-roper-varsko-et-klart-behov-for-a-regulere-lootbokser/514931
 https://www.ea.com/nb-no/games/ea-sports-fc/news/fc-pack-probabilities
 https://store.playstation.com/no-no/search/fc%20points/
-https://www.w3schools.com/tags/tag_nav.asp
+http://www.it.hiof.no/~toremake/komdesressurser/
+view-source:http://www.it.hiof.no/~toremake/komdesressurser/
+Infographic: Laget i Photoshop
 
 Story 2:
 Kilder:
