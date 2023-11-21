@@ -24,6 +24,7 @@ https://www.ea.com/nb-no/games/ea-sports-fc/news/fc-pack-probabilities
 https://store.playstation.com/no-no/search/fc%20points/
 http://www.it.hiof.no/~toremake/komdesressurser/
 view-source:http://www.it.hiof.no/~toremake/komdesressurser/
+Bakgrunnsbilde: Pixabay - Stunning Free Images to Use Anywhere
 Infographic: Laget i Photoshop
 
 Story 2:
