@@ -92,10 +92,10 @@ header {
 }
 
 #gold{
-    width: 90vw;
-    height: 95vh;
+    width: 45vw;
+    height: auto;
     display: flex;
-    margin-left: 40px;
+    margin-left: 500px;
 }
 
 #now{
