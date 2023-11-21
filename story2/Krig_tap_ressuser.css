@@ -1,6 +1,7 @@
 /*Litt kilder her, men mest i kilde dokumentet*/
 /*kilde generelt over koder og sånn har jeg brukt https://www.w3schools.com/*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
 /*Litt generell kode for selve oppsettet på siden, og scroll-behavior*/
 html {
@@ -15,8 +16,8 @@ html {
      padding: 0;
      word-break: break-word;
      filter: contrast(1);
-     font-family: 'Roboto', sans-serif;
-   }
+     font-family: 'Poppins', sans-serif;
+    }
 
 
 
@@ -34,7 +35,7 @@ html {
 .top-nav {
     background-color: #2e0a0a;
     color: #000000;
-    padding: 25px 80px;
+    padding: 10px 80px;
     text-align: right;
     width: 87.5vw;
     
@@ -58,8 +59,8 @@ html {
     text-decoration: none;
     color: #fff;
     border: 1px solid white;
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -99,7 +100,7 @@ header{
 /*boks h1 kode starter her*/
 #boks h1{
     font-size: 2rem;
-        font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
         margin: auto;
         word-break: break-word;
         line-height: 1.5;
@@ -147,7 +148,7 @@ header{
 /*Boks p kode*/
 #boks p{
     font-size: 18px;
-        font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
         margin: auto;
         word-break: break-word;
         line-height: 1.5;
@@ -170,7 +171,7 @@ header{
     color: black;
     font-size: 18px;
     text-shadow: 1px 1px 1px #000;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: auto;
     word-break: break-word;
     line-height: 2.5;
@@ -207,7 +208,7 @@ a:hover {
     color: black;
     background-color: black;
     text-shadow: 1px 1px 1px black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     width: auto;
     margin: auto;
@@ -266,8 +267,8 @@ a:hover {
         line-height: 2;
         padding: 5px;
         display: inline-block;
-        font-family: 'Roboto', sans-serif;
-}
+        font-family: 'Poppins', sans-serif;
+    }
 
 header a {
         font-size: 1.2rem;
