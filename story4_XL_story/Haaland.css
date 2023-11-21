@@ -49,6 +49,39 @@ nav a:hover {
     }
 }
 
+nav.secondary {
+    background-color: #bab8c5;
+    overflow: hidden;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav.secondary ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.secondary li {
+    display: block;
+}
+
+nav.secondary a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+nav.secondary a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
 
 /*Resten av koden der kildene ligger i readme fila*/
 html {

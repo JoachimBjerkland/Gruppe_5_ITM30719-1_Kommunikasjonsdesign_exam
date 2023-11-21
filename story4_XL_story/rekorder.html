@@ -51,22 +51,6 @@
             <li><a href="/story4_XL_story/goal_and_playing_time.html">Mål og spilletid</a></li>
         </ul>
     </nav>
-    <header>
-        <div>
-            <h1>Haaland sin reise til toppen og hans rekord jakt</h1>
-            <a>Har vi sett det siste av fotball stjernen Erling Braut Haaland?</a>
-        </div>
-    </header>
-    <section>
-        <section class="story">
-        <div class="scrollText"><p>Erling Braut Haaland er en norsk fotballspiller som i dag spiller for det engelske Premier League-laget Manchester City</p></div>
-        <div class="scrollText"><p>I en alder av 23 år har han allerede oppnådd mye gjennom karrieren sin i alle klubbene han har spilt for.</p></div>
-        <div class="scrollText"><p>Vi skal gå gjennom hvem denne store fotballspilleren er, og hva han har oppnådd i sin karriere i den unge alderen han fortsatt er i.</p></div>
-        <div class="scrollText"><p>Til slutt vil vi vise hvor han har spilt i løpet av sin karriere på et kart, der du kan se hvordan han har gjort det i løpet av karrieren sin.</p></div>
-    </section>
-    <section>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/FC_RB_Salzburg_versus_Wolfsberger_AC_%2810._August_2019%29_08.jpg" alt="Haaland" id="img">
-    </section>
     <section class="story">
         <div class="scrollText" id="first"><p>Haaland har en rekke rekorder han enten har slått, tangert, misset eller som er pågående, dette er noen av disse rekordene:</p></div>
         <div class="scrollText" id="first"><p>Slått:</p></div>
@@ -112,97 +96,7 @@
         <div class="scrollText"><p>Flest klubbmål på én sesong på tvers av alle turneringer Lionel Messi (Barcelona, 2011/12) 73 mål. Haaland med 13 mål</p></div>
         <div class="scrollText"><p>Flest mål totalt i Champions Leagues historie Cristiano Ronaldo 140 mål. Haaland med 37 mål</p></div>
         <div class="scrollText"><p>Flest mål totalt i Premier Leagues historie Alan Shearer 260 mål. Haaland med 47 mål</p></div>
-<section>
-    <img src="https://images.unsplash.com/photo-1587329310686-91414b8e3cb7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Haaland" id="goal">
-</section>
-    </section>
-    <section>
-        <section class="scrollContainer" id="introduction">
-            <div id="comparisonchart" class="scrollText">
-                <h2>Toppscorere i Premier League sesongen 2022/2023. Kampene og målene den sesongen</h2>
-                <p>Dette er topp 10 mest scorende i sesongen 2022/2023 i Premier League sesongen der Erling Braut Haaland gjorde sin overgang fra det tyske laget Dortmund til det engelske Premier League laget Manchester City.</p>
-                <div style="min-height:313px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/uPYhq/embed.js?v=1" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/uPYhq/full.png" alt="" /></noscript></div>
-    </section>
-    <section class="story">
-        <div class="scrollText" id="first"><p>Hva mer har Haaland fått til i sin debutsesong?</p></div>
-        <div class="scrollText"><p>I sesongen 2022/2023 fikk Erling Braut Haaland gullstøvelen i sin debutsesong i Premier League, gullstøvelen er toppscorer tittelen i Premier league, Haaland fikk 36 mål, noe som er 6 mer enn Harry Kane, som fikk 30 mål.</p></div>
-        <div class="scrollText"><p>Harry Kane spilte i Tottenham sesongen 2022/2023 da han kom på andre plass om toppscorer tittelen med sine 30 mål bak Haaland.</p></div>
-    </section>
-
-    <main>
-        <nav id="businesses"></nav>
-        <div id="map"></div>
-    </main>
-    
-    <script>
-        const centerLat = 55.008;
-        const centerLong = 15.194;
-    
-        const places = [
-            { name: "Map", lat: centerLat, long: centerLong, description: "Klikk her for å se hele kartet" },
-            { name: "Bryne", lat: 58.7354, long: 5.6477, description: "Fra sesong 2016 til 2017, spilte han for det norske laget bryne" },
-            { name: "Molde", lat: 62.7377, long: 7.1590, description: "Fra sesong 2017 til 2019, spilte han for det norske laget Molde" },
-            { name: "Red Bull Salzburg", lat: 47.8028, long: 13.0566, description: "Fra sesong 2019 til 2020, spilte han for det østerrikske laget Red Bull Salzburg" },
-            { name: "Borussia Dortmund", lat: 51.5079, long: 7.4703, description: "Fra sesong 2020 til 2022, spilte han for det tyske laget Borussia Dortmund" },
-            { name: "Manchester City", lat: 53.4830, long: -2.1977, description: "Fra sesong 2022, startet han å spille for det engelske Premier League laget Manchester City, dette laget spiller han for fortsatt i 2023" }
-        ]
-    
-        let map = L.map('map', {
-            center: [centerLat, centerLong],
-            zoom: 4
-        })
-    
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
-    
-        let navHTML = "";
-    
-        places.forEach((place) => {
-            if (place.name !== "Map") {
-                const marker = L.marker([place.lat, place.long]).addTo(map);
-                marker.bindPopup(`<b>${place.name}</b><br>${place.description}`);
-            }
-    
-            navHTML += `<article><h3>${place.name}</h3><p>${place.description}</p>`;
-    
-            if (place.name === "Map") {
-                navHTML += `<button onclick="map.flyTo([${centerLat},${centerLong}], 4)">Zoom Out</button>`;
-            } else {
-                navHTML += `<button onclick="map.flyTo([${place.lat},${place.long}], 15)">Vis på kart</button>`;
-            }
-    
-            navHTML += `</article>`;
-        });
-    
-        document.getElementById("businesses").innerHTML = navHTML;
-    </script>
-    
-    <section>
-        <img src="https://plus.unsplash.com/premium_photo-1680265343689-0d8a86d1a97a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Haaland" id="time">
-    </section>
-
-        <section class="story">
-            <div class="scrollText" id="first"><p>Sesong 2023/2024, hvordan har Haaland klart seg i sin andre sesong i Manchester City hittil?</p></div>
-            <div class="scrollText"><p>Hittil i 2023/2024 sesongen, så har Haaland scoret 13 mål i Premier League sesongen. "Oppdatert November 2023."</p></div>
-            <div class="scrollText"><p>Fortsetter han slikt resten av sesongen, så har han mulighet til å slå sin tidligere rekord på 36, med 2 mål og få 38 denne sesongen.</p></div>
-            <div class="scrollText"><p> Men klarer Haaland dette? Det får vi svar på når sesongen er over i 2024.</p></div>
-        </section>
-        <section>
-            <img src="https://images.unsplash.com/photo-1531005117551-959a5ec8eece?q=80&w=2134&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Haaland" id="gold">
-        </section>
-        <section class="story">
-            <div class="scrollText" id="first"><p>Kampen og gullstøvelen fortsetter denne sesongen, hvordan har Haaland klart seg hittil?:</p></div>
-            <div class="scrollText"><p>Haaland kjemper om en jevn pris, gullstøvelen, som er en pris for den spilleren med mest mål i løpet av sesongen.
-                Haaland ligger hittil på en 4 plass med 13 mål, han har en poengsum på 26, som er 8,5 bak ledende Amahl Pellegrino som spiller på norske laget Bodø/Glimt. Tall er fra November 2023
-            Fortsetter Haaland på samme måte som nå, så kommer han til å kunne vinne den igjen denne sesongen. Men hvem vet, det kan alltids være en overraskelse med slike priser.</p></div>
-        </section>
-        <section class="story">
-            <div class="scrollText"><p>Det vi ser er at Haaland er en utrolig god fotballspiller med et godt lag rundt seg i Manchester City.</p></div>
-            <div class="scrollText"><p>Han har slått rekord etter rekord, og blitt toppscorer i sin første sesong for Manchester City.</p></div>
-            <div class="scrollText"><p>Vil denne fotballspilleren fortsette i samme spor, eller vil hans karriere ta en drastisk endring og vil Haaland endre seg helt i løpet av sin karriere?</p></div>
-
+        
         </section>
         <footer class="end">
             <p>Authors: Joachim Halvorsen Bjerkland, Kasper Keiserud Mikalsen, Martin Samuelsen.</p>
