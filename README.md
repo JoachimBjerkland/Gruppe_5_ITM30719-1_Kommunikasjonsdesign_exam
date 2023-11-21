@@ -5,7 +5,9 @@ Her er alle kildene vi har brukt til denne eksamensinnleveringen (Flere av kilde
 
 Her er alle sine kanditatnummer:
 Joachim Halvorsen Bjerkland (Kandidatnummer: 460)
+
 Kasper Keiserud Mikalsen (Kandidatnummer: )
+
 Martin Samuelsen (Kandidatnummer: )
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
