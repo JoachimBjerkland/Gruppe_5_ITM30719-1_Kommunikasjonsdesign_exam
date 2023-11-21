@@ -1,4 +1,6 @@
 /*Her er kode for nav linkene*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
 .top-nav {
     background-color: #2e0a0a;
     color: #000000;
@@ -27,7 +29,7 @@
     color: #fff;
     border: 1px solid white;
     padding: 8px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Media Query */
@@ -49,9 +51,9 @@
 }
 
 
-
 /*Resten av koden der kildene ligger i readme fila*/
 html {
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     background-color: #bab8c5;
     font-size: 16px;
