@@ -24,7 +24,7 @@ https://www.ea.com/nb-no/games/ea-sports-fc/news/fc-pack-probabilities
 https://store.playstation.com/no-no/search/fc%20points/
 https://www.w3schools.com/tags/tag_nav.asp
 
-Krig story:
+Story 2:
 Kilder:
 
 Border:
