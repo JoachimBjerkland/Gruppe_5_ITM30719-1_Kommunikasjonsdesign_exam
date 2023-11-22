@@ -1,3 +1,13 @@
+/*
+Her er alle sine kanditatnummer:
+Joachim Halvorsen Bjerkland (Kandidatnummer: 460)
+
+Kasper Keiserud Mikalsen (Kandidatnummer: 449)
+
+Martin Samuelsen (Kandidatnummer: 448)
+*/
+
+
 /*Her er kode for nav linkene*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
@@ -112,17 +122,17 @@ header {
 }
 
 #goal{
-    width: 80vw;
-    height: 95vh;
+    width: 70vw;
+    height: 90vh;
     display: flex;
-    margin-left: 40px;
+    margin-left: 200px;
 }
 
 #time{
-    width: 90vw;
-    height: 95vh;
+    width: 70vw;
+    height: 90vh;
     display: flex;
-    margin-left: 40px;
+    margin-left: 200px;
 }
 
 #gold{
