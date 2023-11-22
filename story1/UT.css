@@ -117,3 +117,51 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    header div {
+        max-width: 80%;
+    }
+
+    main div {
+        padding: 1rem;
+        max-width: 80%;
+    }
+
+    footer p{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 17px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    header div {
+        max-width: 90%;
+    }
+
+    main div {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    footer p{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
