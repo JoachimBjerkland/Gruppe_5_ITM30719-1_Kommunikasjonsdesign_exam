@@ -126,17 +126,38 @@ header {
 }
 
 #gold{
-    width: 45vw;
-    height: auto;
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    margin-left: 300px;
+}
+
+#imageHaaland{
+    width: 50vw;
+    height: 90vh;
     display: flex;
     margin-left: 300px;
 }
 
 #now{
-    width: 90vw;
-    height: 100vh;
+    width: 70vw;
+    height: 90vh;
     display: flex;
-    margin-left: 40px;
+    margin-left: 130px;
+}
+
+#line{
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    margin-left: 130px;
+}
+
+#missed{
+    width: 70vw;
+    height: 130vh;
+    display: flex;
+    margin-left: 130px;
 }
 
 
