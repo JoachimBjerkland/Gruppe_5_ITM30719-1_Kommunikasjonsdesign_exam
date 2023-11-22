@@ -97,6 +97,7 @@ https://www.w3schools.com/tags/tag_nav.asp
 Story 4:
 Kilder:
 Info fra saken er hentet fra de forskjellige tabs inne på nettsiden på venstre side på siden.
+Enkelte bilder er hentet fra Creative Commons-lisenser på google bilder.
 https://www.vg.no/spesial/haaland/
 https://snl.no/Erling_Braut_Haaland
 https://datawrapper.dwcdn.net/kcK9C/1/ (Selve tabellen med stats)
