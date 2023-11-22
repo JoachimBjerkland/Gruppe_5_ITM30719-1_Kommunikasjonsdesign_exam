@@ -170,6 +170,24 @@ header {
     margin-left: 130px;
 }
 
+@media (max-width: 768px) {
+    #img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #goal,
+    #time,
+    #gold,
+    #imageHaaland,
+    #now,
+    #line,
+    #missed {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+}
 
 h1 {
     font-size: 2.8rem;
