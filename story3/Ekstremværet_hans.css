@@ -36,17 +36,17 @@ nav a:hover {
 }
 
 /* Media Query */
-@media screen and (max-width: 450px) {
-    .top-nav {
+@media screen and (max-width: 500px) {
+    .nav {
         text-align: center;
         padding: 5px;
     }
 
-    .top-nav ul {
+    .nav ul {
         text-align: center;
     }
 
-    .top-nav ul li {
+    .nav ul li {
         display: inline;
         margin: 0 0 10px 0;
     }
