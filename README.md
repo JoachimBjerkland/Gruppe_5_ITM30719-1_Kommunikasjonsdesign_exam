@@ -22,8 +22,7 @@ https://www.thegamer.com/ea-made-over-1-5-billion-from-ultimate-team-during-the-
 https://www.gamer.no/artikler/forbrukerradet-roper-varsko-et-klart-behov-for-a-regulere-lootbokser/514931
 https://www.ea.com/nb-no/games/ea-sports-fc/news/fc-pack-probabilities
 https://store.playstation.com/no-no/search/fc%20points/
-http://www.it.hiof.no/~toremake/komdesressurser/
-view-source:http://www.it.hiof.no/~toremake/komdesressurser/
+http://www.it.hiof.no/~toremake/komdesressurser/ --> view-source:http://www.it.hiof.no/~toremake/komdesressurser/
 Bakgrunnsbilde: Pixabay - Stunning Free Images to Use Anywhere
 Infographic: Laget i Photoshop
 
@@ -48,7 +47,7 @@ https://www.w3schools.com/css/css3_mediaqueries.asp
 Generelt har https://www.w3schools.com/ blitt brukt til meste av koden
 Navigasjon kode brukte er den som ble brukt i timen 20/9
 
-Nyhets kilder:
+Nyhetskilder:
 http://www.it.hiof.no/~toremake/komdesressurser/
 
 https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html
